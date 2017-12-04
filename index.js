@@ -14,6 +14,10 @@ function distanceFromHqInFeet (blockNumber) {
 }
 
 function distanceTravelledInFeet (startBlock, endBlock){
-  let blocksTravelled = endBlock - startBlock;
-  return blocksTravelled * 264;
+  
+  if (endBlock > startBlock){
+    return (endBlock - startBlock) * 264;
+  } else {
+    return (startBlock - endBlock) * 264;
+  }
 }
