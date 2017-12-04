@@ -1,6 +1,9 @@
 // Code your solution in this file!
 function distanceFromHqInBlocks (){
 
-  const distance = 43;
-  return distance;
+}
+
+function distanceFromHqInFeet () {
+  distanceFromHqInBlocks();
+  // calls distanceFromHqInBlocks from inside the distanceFromHqInFeet function
 }
