@@ -23,7 +23,7 @@ function distanceTravelledInFeet (startBlock, endBlock){
 }
 
 function calculatesFarePrice(startBlock, endBlock) {
-  let feetTravelled = (endBlock - startBlock) * 264;
+  let feetTravelled = Math.abs(endBlock - startBlock) * 264;
 
   if (feetTravelled < 400){
     return 0;
