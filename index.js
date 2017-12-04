@@ -7,9 +7,12 @@ function distanceFromHqInBlocks (blockNumber){
   }
 }
 
-/*
 function distanceFromHqInFeet () {
-  distanceFromHqInBlocks();
-  // calls distanceFromHqInBlocks from inside the distanceFromHqInFeet function
+  let blocks = distanceFromHqInBlocks();
+
+  return blocks * 264;
 }
-*/
+
+function distanceTravelledInFeet (){
+  
+}
