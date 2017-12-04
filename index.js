@@ -26,7 +26,7 @@ function calculatesFarePrice(startBlock, endBlock) {
   let feetTravelled = (endBlock - startBlock) * 264;
 
   if (feetTravelled < 400){
-    return 
+    return 0;
   } else if (feetTravelled > 400 && feetTravelled <= 2000) {
     return feetTravelled * .02;
   } else if (feetTravelled > 2000 && feetTravelled < 2500) {
